@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <title>Mari's blogs</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body>
+		<main>
+		    <div id="mainDiv">
+		        <div th:each="article : ${articles}">
+		            <a th:text="${article.name}" th:href="${article.url}"></a>
+		        </div>
+		    </div>
+		</main>
+	</body>
+</html>
